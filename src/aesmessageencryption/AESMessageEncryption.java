@@ -31,11 +31,11 @@ public class AESMessageEncryption {
             System.out.println("Plain Text: " + message);
             // Mesajı şifreleme
             String encryptedMessage = AESUtil.encrypt(message, secretKey);
-            System.out.println("Şifrelenmiş Mesaj: " + encryptedMessage);
+            System.out.println("Cipher Text: " + encryptedMessage);
 
             // Şifrelenmiş mesajı çözme
             String decryptedMessage = AESUtil.decrypt(encryptedMessage, secretKey);
-            System.out.println("Çözülmüş Mesaj: " + decryptedMessage);
+            System.out.println("Decrypted Mesaj: " + decryptedMessage);
 
         } catch (Exception e) {
             e.printStackTrace();
